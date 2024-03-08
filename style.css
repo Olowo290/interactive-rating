@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+main {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+section {
+  margin-bottom: 4em;
+  background-color: hsl(213, 19%, 18%);
+  padding: 1.2em;
+  max-width: 360px;
+  margin-top: 20vh;
+  border-radius: 10px;
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+}
+
+h1,
+h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  margin-top: 0.3em;
+}
+.circle-bg {
+  background-color: hsl(215, 12%, 40%);
+  padding: 0.6em 0.8em;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+article {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+article p {
+  cursor: pointer;
+}
+article p:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+article p.active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.hovered-before {
+  background-color: hsl(217, 17%, 64%);
+  color: hsl(0, 0%, 100%);
+}
+.active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+input {
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  padding: 0.9em;
+  margin-top: 1em;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+input:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+/* ***********THANK YOU*********** */
+.illustrator {
+  margin-bottom: 1.5em;
+  animation: scale 1s alternate infinite;
+}
+.thankyou {
+  text-align: center;
+}
+.thankyou p:last-child {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.what-you-selected {
+  background-color: hsl(215, 12%, 40%);
+  color: hsl(25, 97%, 53%);
+  width: fit-content;
+  margin: 0 auto 1.3em;
+  padding: 0.4em 1em;
+  border-radius: 1.2em;
+}
+
+.attribution {
+  font-size: 1em;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+.attribution a {
+  color: hsl(290, 84%, 50%);
+  text-decoration: none;
+}
+@keyframes scale {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
